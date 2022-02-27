@@ -29,7 +29,7 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./docker_setup/nginx/:/etc/ngix/conf.d
     ports: 
-      - 80:80
+      - 8080:8080
     networks:
       - nginx_network
   backends:
@@ -40,10 +40,14 @@ services:
     build:
       context: .
       dockerfile: ./docker_setup/backends/django_backend/Dockerfile
+    networks:
+      - nginx_network
   flask_backend:
     build:
       context: .
       dockerfile: ./docker_setup/backends/flask_backend/Dockerfile
+    networks:
+      - nginx_network
   
 
 volumes:
