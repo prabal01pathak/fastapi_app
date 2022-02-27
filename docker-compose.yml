@@ -36,10 +36,10 @@ services:
     build:
       context: .
       dockerfile: ./docker_setup/backends/Dockerfile
-  django_backend:
-    image: fastapi_app_backends
-    ports: 
-      - 8000:8000
+  # django_backend:
+  #   image: fastapi_app_backends
+  #   ports: 
+  #     - 8000:8000
   
 
 volumes:
