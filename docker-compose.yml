@@ -9,9 +9,19 @@ services:
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./docker_setup/nginx/:/etc/ngix/conf.d
+    ports: 
+      - 80:80
     networks:
       - nginx_network
-
+  backends:
+    build:
+      context: .
+      dockerfile: ./docker_setup/backends/Dockerfile
+  django_backend:
+    image: fastapi_app_backends
+    ports: 
+      - 8000:8000
+  
 
 volumes:
   static_volume: {}
