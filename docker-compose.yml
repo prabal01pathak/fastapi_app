@@ -1,0 +1,21 @@
+version: "3.2"
+
+services:
+  nginx:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker_setup/nginx/Dockerfile
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./docker_setup/nginx/:/etc/ngix/conf.d
+    networks:
+      - nginx_network
+
+
+volumes:
+  static_volume: {}
+
+networks:
+  nginx_network:
+    driver: bridge
