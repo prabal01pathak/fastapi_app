@@ -8,6 +8,8 @@ fastapi = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 fastapi-admin = "*"
 examples = "*"
+django = "*"
+flask = "*"
 
 [dev-packages]
 
