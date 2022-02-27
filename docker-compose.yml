@@ -37,9 +37,13 @@ services:
       context: .
       dockerfile: ./docker_setup/backends/Dockerfile
   django_backend:
-    image: multi_backend_backends
-    ports: 
-      - 8000:8000
+    build:
+      context: .
+      dockerfile: ./docker_setup/backends/django_backend/Dockerfile
+  flask_backend:
+    build:
+      context: .
+      dockerfile: ./docker_setup/backends/flask_backend/Dockerfile
   
 
 volumes:
