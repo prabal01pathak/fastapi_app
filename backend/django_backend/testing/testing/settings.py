@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(m8$0r=!v+l_i^!_mk*aech6gto=jzpe5s5x!#(mdxx6s6!srv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app',
 ]
 
 MIDDLEWARE = [
@@ -68,7 +69,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'testing.wsgi.application'
-
+CSRF_TRUSTED_ORIGINS = ["https://8000-cs-258088632898-default.cs-asia-southeast1-ajrg.cloudshell.dev"]
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
