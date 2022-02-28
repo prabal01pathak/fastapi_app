@@ -69,7 +69,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'testing.wsgi.application'
-CSRF_TRUSTED_ORIGINS = ["https://8000-cs-258088632898-default.cs-asia-southeast1-ajrg.cloudshell.dev"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-cs-258088632898-default.cs-asia-southeast1-ajrg.cloudshell.dev",
+    "https://8080-prabal01pathak-multiback-pmn2639wxwi.ws-us34.gitpod.io",
+    ]
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
