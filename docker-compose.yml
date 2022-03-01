@@ -9,6 +9,7 @@ services:
       - "zookeeper_data:/bitnami"
     environment:
       - ALLOW_ANONYMOUS_LOGIN=yes
+
   kafka:
     image: docker.io/bitnami/kafka
     ports:
@@ -20,6 +21,7 @@ services:
       - ALLOW_PLAINTEXT_LISTENER=yes
     depends_on:
       - zookeeper
+
   nginx:
     restart: unless-stopped
     build:
@@ -32,10 +34,12 @@ services:
       - 8080:8080
     networks:
       - nginx_network
+
   backends:
     build:
       context: .
       dockerfile: ./docker_setup/backends/Dockerfile
+
   django_backend:
     build:
       context: .
