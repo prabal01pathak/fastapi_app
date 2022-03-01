@@ -79,7 +79,6 @@ services:
       - 4000:4000
     networks:
       - nginx_network
-  
 
 volumes:
   static_volume: {}
@@ -87,7 +86,6 @@ volumes:
     driver: local
   kafka_data:
     driver: local
-
 
 networks:
   nginx_network:
