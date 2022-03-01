@@ -48,6 +48,7 @@ services:
       - 8000:8000
     volumes:
       - ./backend/django_backend/testing/:/app/backend/django_backend/testing/
+      
   flask_backend:
     build:
       context: .
@@ -56,6 +57,16 @@ services:
       - 5000:5000
     networks:
       - nginx_network
+
+  fastapi_backend:
+    build:
+      context: .
+      dockerfile: ./docker_setup/backends/fastapi_backend/Dockerfile
+    ports: 
+      - 9000:9000
+    networks:
+      - nginx_network
+
   express_backend:
     build:
       context: .
