@@ -56,6 +56,14 @@ services:
       - 5000:5000
     networks:
       - nginx_network
+  express_backend:
+    build:
+      context: .
+      dockerfile: ./docker_setup/backends/express_backend/Dockerfile
+    ports:
+      - 4000:4000
+    networks:
+      - nginx_network
   
 
 volumes:
