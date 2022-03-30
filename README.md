@@ -41,21 +41,12 @@ https://127.0.0.1:8080
 👤 **Prabal Pathak**
 
 * Website: https://prabals.herokuapp.com
-* Twitter: [@Don't know](https://twitter.com/Don't know)
 * Github: [@prabal01pathak](https://github.com/prabal01pathak)
-* LinkedIn: [@I'll update it](https://linkedin.com/in/I'll update it)
+* LinkedIn: [@prabal Pathak](https://linkedin.com/in/prabal01pathak)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](Open for whatever you like). You can also take a look at the [contributing guide](I'll happy to see you contributing free to collaborate with anyone.).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-<a href="https://www.patreon.com/Don't have">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
+Contributions, issues and feature requests are welcome!.
 
 ## 📝 License
 
