@@ -82,10 +82,10 @@ services:
 
 volumes:
   static_volume: {}
-  zookeeper_data:
-    driver: local
-  kafka_data:
-    driver: local
+#   zookeeper_data:
+#     driver: local
+#   kafka_data:
+#     driver: local
 
 networks:
   nginx_network:
